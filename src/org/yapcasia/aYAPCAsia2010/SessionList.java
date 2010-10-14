@@ -31,13 +31,14 @@ public class SessionList extends ListActivity {
 	private Spinner date_spinner;
 
 	private AdapterView.OnItemSelectedListener listner = new AdapterView.OnItemSelectedListener() {
+		@SuppressWarnings("rawtypes")
 		@Override
-		public void onItemSelected(AdapterView parent, View view,
-				int position, long id) {
+		public void onItemSelected(AdapterView parent, View view, int position, long id) {
 
 			setSessionList();
 	    }
 
+		@SuppressWarnings("rawtypes")
 		@Override
 		public void onNothingSelected(AdapterView parent) {
 
@@ -117,7 +118,7 @@ public class SessionList extends ListActivity {
 
 				JSONArray sessions = tt.getJSONArray("sessions");
 				for (int j=0; j<sessions.length(); j++) {
-					Session session = new Session(sessions.getJSONObject(j));
+					Session session = new Session(sessions.getJSONObject(j), day);
 					ArrayList<Session> list = timetable.get(day+session.room);
 					if (list == null) {
 						list = new ArrayList<Session>();
@@ -155,10 +156,14 @@ public class SessionList extends ListActivity {
 	        GetDataTask task = new GetDataTask(this);
 	        task.execute(getResources().getString(R.string.timetable_json_url));
             break;
+        case R.id.menu_checked:
+            Intent i = new Intent(this, CheckedSessionList.class);
+            startActivity(i);
+        	break;
         case R.id.menu_yapc_site:
         	Uri uri = Uri.parse(getResources().getString(R.string.yapc_asia_url));
-        	Intent i = new Intent(Intent.ACTION_VIEW, uri);
-        	startActivity(i);
+        	Intent i2 = new Intent(Intent.ACTION_VIEW, uri);
+        	startActivity(i2);
         	break;
         case R.id.menu_about:
         	new AlertDialog.Builder(this).setTitle("about").setMessage(R.string.about).show();

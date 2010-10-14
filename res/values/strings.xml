@@ -3,13 +3,14 @@
     <string name="hello">Hello World, RoomList!</string>
     <string name="app_name">YAPC::Asia 2010 viewer</string>
     <string name="menu_reload">リロード</string>
+	<string name="menu_checked">チェック一覧</string>
     <string name="menu_yapc_site">YAPC::Asia2010へ</string>
     <string name="menu_about">このアプリについて</string>
     <string name="about">このアプリはiRubyKaigi2010、並びにaRubyKaigi2010を参考に作成させて頂きました。また、講演情報の取得にはiPhone向けYAPC viewerのJSONデータを利用させて頂いています。</string>
 	<string name="yapc_asia_url">http://yapcasia.org/2010/</string>
 	<string name="timetable_json_url">http://github.com/fujiwara/irubykaigi/raw/master/Project/timetable.json</string>
+	<string name="check">このセッションをチェック</string>
 	<string-array name="days">
-		<item>10/14</item>
 		<item>10/15</item>
 		<item>10/16</item>
 	</string-array>

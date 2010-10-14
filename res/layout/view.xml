@@ -5,45 +5,67 @@
     android:layout_height="fill_parent"
     android:background="@android:color/white">
 
-	<TextView android:text="00:00 - 00:00"
-		android:id="@+id/time"
-		android:textSize="16sp"
-		android:layout_margin="10dip"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textColor="@android:color/black"></TextView>
+    <ScrollView
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
 
-	<TextView android:text="title"
-		android:id="@+id/title"
-		android:textSize="24sp"
-		android:layout_margin="10dip"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textColor="@android:color/black"></TextView>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
 
-	<TextView android:text="speaker"
-		android:id="@+id/speaker"
-		android:textSize="18sp"
-		android:layout_margin="10dip"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textColor="@android:color/black"></TextView>
+			<TextView android:text="00:00 - 00:00"
+				android:id="@+id/time"
+				android:textSize="16sp"
+				android:layout_margin="10dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"></TextView>
 
-	<TextView android:text="room: room"
-		android:id="@+id/room"
-		android:textSize="18sp"
-		android:layout_margin="10dip"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:textColor="@android:color/black"></TextView>
+			<TextView android:text="title"
+				android:id="@+id/title"
+				android:textSize="24sp"
+				android:layout_margin="10dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"></TextView>
 
-	<TextView android:text="summary"
-		android:id="@+id/summary"
-		android:textSize="14sp"
-		android:layout_margin="10dip"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:singleLine="false"
-		android:autoLink="web"
-		android:textColor="@android:color/black"></TextView>
+			<TextView android:text="speaker"
+				android:id="@+id/speaker"
+				android:textSize="18sp"
+				android:layout_margin="10dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"></TextView>
+
+			<TextView android:text="room: room"
+				android:id="@+id/room"
+				android:textSize="18sp"
+				android:layout_margin="10dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"></TextView>
+
+			<TextView android:text="summary"
+				android:id="@+id/summary"
+				android:textSize="14sp"
+				android:layout_margin="10dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="false"
+				android:autoLink="web"
+				android:textColor="@android:color/black"></TextView>
+
+			<CheckBox android:text="@string/check"
+				android:id="@+id/check"
+				android:textSize="18sp"
+				android:layout_margin="10dip"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/black"></CheckBox>
+
+		</LinearLayout>
+
+	</ScrollView>
+
 </LinearLayout>

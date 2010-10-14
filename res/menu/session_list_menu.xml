@@ -1,4 +1,5 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:title="@string/menu_reload" android:icon="@drawable/ic_menu_refresh" android:id="@+id/menu_reload"></item>
-<item android:title="@string/menu_yapc_site" android:icon="@drawable/icon" android:id="@+id/menu_yapc_site"></item>
+<item android:id="@+id/menu_checked" android:icon="@android:drawable/ic_menu_view" android:title="@string/menu_checked"></item><item android:title="@string/menu_yapc_site" android:icon="@drawable/icon" android:id="@+id/menu_yapc_site"></item>
 <item android:title="@string/menu_about" android:icon="@android:drawable/ic_menu_preferences" android:id="@+id/menu_about"></item>
+
 </menu>
